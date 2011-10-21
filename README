@@ -1,0 +1,16 @@
+File-Comments
+=============
+
+The ideas is quite simple. There are plenty of files on a Linux filesystem,
+many of them are owned by some RPM but some aren't. Additionally, some files
+are re-generated from scratch on a service restart, etc.
+
+I'd like to create a database of coments that could be used by any tool,
+e.g. to identify that "I was here", this is my file, etc. We usually write
+comments directly to files but as the files get re-generated, the info is
+lost. Moreover there are plenty of files that don't allow comments, some
+file formats allow comments, but not in a unified way.
+
+This project should unify the approach to add, edit, and remove a file
+comment (or rather comments) independently on a file type and selected
+filesystem.
